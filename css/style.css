@@ -7,6 +7,7 @@
   --cornflower: #e7e9fc;
   --ocean: #404bbf;
   --green: #31d0aa;
+  --lightslate: #8e8f99;
 }
 
 /*CSS RESET*/
@@ -248,6 +249,45 @@ body {
   margin-left: 30px;
   margin-top: 30px;
 }
+
+/*Section 2 SVG*/
+
+.benefits-list {
+  display: flex;
+  gap: 25px;
+}
+
+.benefits-item {
+  flex-basis: calc(100% / 4 - 25px);
+  height: 112px;
+}
+
+.benefits-link {
+  width: 264px;
+  height: 112px;
+  border-radius: 5px;
+  border: 1px solid var(--lightslate);
+
+  color: var(--lightslate);
+  background-color: var(--white);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.benefits-icon {
+  fill: currentColor;
+  width: 64px;
+  height: 64px;
+}
+
+.benefits-link:hover,
+.benefits-link:focus {
+  color: var(--ocean);
+  border-color: var(--ocean);
+}
+
 /*Section 3*/
 
 .section {
@@ -326,7 +366,6 @@ body {
 }
 
 .team-social-list {
-  list-style: none;
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -397,6 +436,44 @@ body {
   line-height: 1.87;
 }
 
+/*Section 5 Customers*/
+
+.customers-list {
+  display: flex;
+  gap: 30px;
+}
+
+.customers-item {
+  flex-basis: calc(100% / 6 - 25px);
+  height: 100px;
+}
+
+.customers-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  border: 1px solid var(--lightslate);
+
+  color: var(--lightslate);
+  background-color: var(--white);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.customers-icon {
+  fill: currentColor;
+  width: 100px;
+  height: 60px;
+}
+
+.customers-link:hover,
+.customers-link:focus {
+  color: var(--ocean);
+  border-color: var(--ocean);
+}
+
 /*Footer*/
 
 .bg-footer {
@@ -418,4 +495,21 @@ body {
 .page-footer {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+/*Social Media Footer*/
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social-footer {
+  color: var(--cloud);
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+.footer-block {
+  margin-left: 120px;
 }
