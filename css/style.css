@@ -156,6 +156,7 @@ body {
 .hero {
   padding: 200px 0;
   text-align: center;
+  height: 600px;
 
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -265,9 +266,7 @@ body {
   width: 264px;
   height: 112px;
 
-  border: 1px solid var(--lightslate);
   border-radius: 4px;
-
   background-color: var(--cloud);
 
   display: flex;
